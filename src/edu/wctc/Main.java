@@ -17,10 +17,12 @@ public class Main {
        // l3.plus()
 
         Period p = Period.of(1,7,1);
+        LocalDate res = l3.plus(p);
 
         System.out.printf("%d years, %d months, and %d days ago", yearsApart.getYears(), yearsApart.getMonths(), yearsApart.getDays());
         System.out.println();
         System.out.printf("%d years, %d months, and %d days ago", yearsApart2.getYears(), yearsApart2.getMonths(), yearsApart2.getDays());
-        System.out.println(p.getYears());
+        System.out.println();
+        System.out.println(res);
     }
 }
